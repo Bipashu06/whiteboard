@@ -1,0 +1,57 @@
+.text-box{
+    border-radius: 4px;
+    margin: 10px;
+    position: absolute;
+    overflow-wrap: break-word;
+    cursor: text;
+    user-select: none; 
+    overflow: show;
+    padding: 4px;
+    
+}
+
+.text-box:focus{
+    outline: none;
+    border: 2px dashed rgb(11, 12, 12);
+    background-color: rgb(183, 227, 245);
+    display: block;
+}
+.text-box:focus .resize-handle,
+.text-box:focus .boxSize-handler {
+    display: block;
+}
+
+.text-box::-webkit-scrollbar {
+    display: block;
+}
+.resize-handle{
+    height: 100%;
+    width: 8px;
+    background-color: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    cursor: ew-resize;
+    display: none;
+}
+.boxSize-handler{
+    background-color: rgb(184, 184, 184);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    right: -10px;
+    position: absolute;
+    bottom: -10px;
+    display: none;
+    cursor:nwse-resize;
+}
+.text-container{
+    position: relative;
+}
+.delete-button{
+    height: 30px;
+    width: 30px;
+    background-color: blueviolet;
+    position: relative;
+
+}
