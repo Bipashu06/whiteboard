@@ -33,7 +33,7 @@ import green from './assets/green.png';
 import eraser from './assets/eraser.png';
 
 import TextBox from './textbox';
-import { height, width } from '@fortawesome/free-brands-svg-icons/fa42Group';
+
 export default function Board() {
     const canvasRef = useRef(null); // Reference to the canvas element
     const [isDrawing, setIsDrawing] = useState(false); // State to track if the mouse is pressed
