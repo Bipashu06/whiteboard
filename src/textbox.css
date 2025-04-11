@@ -1,0 +1,84 @@
+.text-box{
+    border-radius: 4px;
+    margin: 10px;
+    position: absolute;
+    overflow-wrap: break-word;
+    cursor: text;
+    user-select: none; 
+    overflow: show;
+    padding: 4px;
+}
+.text-box:focus{
+    outline: none;
+    border: 2px dashed rgb(11, 12, 12);
+    background-color: rgb(183, 227, 245);
+    display: block;
+}
+.text-box:focus .resize-handle,
+.text-box:focus .boxSize-handler {
+    display: block;
+}
+.text-box:focus .text-edit-controlls{
+    display: flex;
+}
+.text-box::-webkit-scrollbar {
+    display: block;
+}
+.resize-handle{
+    height: 100%;
+    width: 8px;
+    background-color: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    cursor: ew-resize;
+    display: none;
+}
+.boxSize-handler{
+    background-color: rgb(184, 184, 184);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    right: -10px;
+    position: absolute;
+    bottom: -10px;
+    display: none;
+    cursor:nwse-resize;
+}
+.text-edit-controlls{
+    display: none;
+    gap: 4px;
+    position: absolute;
+    top: 0;
+    transform: translate(0%, -100%);
+    left: 0px;
+    box-sizing: border-box;
+}
+#text_box_color_input{
+    width: 20px;
+    height: 22px;
+}
+#font-weight-selection{
+    font-size: 15px;
+    padding: 0 2px;
+    margin-left: 4px;
+}
+.weight-list-container{
+    color: black;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 2px;
+}
+
+.options, .selected-value{
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid gray;
+    color: black;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 2px;
+}
+.selected-value{
+    border-bottom: none;
+}
